@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="C:/Users/luke_/OneDrive/Desktop/font-awesome-web/css/all.css">
+</head>
+<body id="homeBody" >
+    <header>
+        <nav id="navbar">
+            <div class="logo-con">
+                <img src="img/MunozLaw-Logo.png" alt="Munoz logo">
+                <div class="words">
+                    <h2>Munoz Law</h2>
+                    <p>International Defense Attorny</p>
+                </div>
+            </div>
+
+            <ul id="topNav">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="attorneys.html">Attorneys</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars" id="menu"></span>
+            </label>
+        </nav>
+    </header>
+
+    <div class="main-image">
+        <img src="img/library-edit.jpg" alt="background">
+    </div>
+
+    <div class="services" id="services">
+        <h1>services</h1>
+
+        <ul>
+            <li id="immig" onclick="showRightService(this.id)">Immigration Law</li>           
+            <li id="disc" onclick="showRightService(this.id)">Anti-Discrimination Law</li>
+            <li id="crim" onclick="showRightService(this.id)">Criminal Law</li>
+        </ul>
+        
+        <div class="disc hideService" id="law-disc">
+            <div class="disc-info">
+                <p>Prevention of discrimination against protected
+                    groups or classes.
+                </p>
+                <span><a href="services.html">Learn More</a></span>
+            </div>
+            <div class="disc-lawyers">
+                <h2>our descrimination attorneys</h2>
+                <div class="lawyers-con">
+                    <div class="container-lawyer">
+                        <img src="img/linkedin-sales-navigator-pAtA8xe_iVM-unsplash.jpg">
+                        <p><a href="attorneys.html">Michael</a></p>
+                    </div>
+                    <div class="conatiner-lawyer">
+                        <img src="img/etty-fidele-VNYCIbZju0o-unsplash.jpg">
+                        <p><a href="attorneys.html">Bruce</a></p>
+                    </div>
+                    <div class="container-lawyer">
+                        <img src="img/rodrigo-dos-reis-QUTXypSFlQQ-unsplash.jpg">
+                        <p><a href="attorneys.html">Clark</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="immig hideService" id="law-immig">
+            <div class="immig-info">
+                <p>National statutes, regulations, and legal precedents 
+                    governing immigration into and deportation 
+                    from the country.
+                </p>
+                <span><a href="services.html">Learn More</a></span>
+            </div>
+            <div class="immig-lawyers">
+                <h2>our Immigration attorneys</h2>
+                <div class="lawyers-con">
+                    <div class="container-lawyer">
+                        <img src="img/linkedin-sales-navigator-pAtA8xe_iVM-unsplash.jpg">
+                        <p><a href="attorneys.html">Michael</a></p>
+                    </div>
+                    <div class="conatiner-lawyer">
+                        <img src="img/etty-fidele-VNYCIbZju0o-unsplash.jpg">
+                        <p><a href="attorneys.html">Bruce</a></p>
+                    </div>
+                    <div class="container-lawyer">
+                        <img src="img/rodrigo-dos-reis-QUTXypSFlQQ-unsplash.jpg">
+                        <p><a href="attorneys.html">Clark</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crim hideService" id="law-crim">
+            <div class="crim-info">
+                <p>Conduct perceived as threatening, harmful, or otherwise 
+                    endangering to the property, health, safety, and moral 
+                    welfare of people inclusive of one's self.
+                </p>
+                <span><a href="services.html">Learn More</a></span>
+            </div>
+            <div class="crim-lawyers">
+                <h2>our Criminal attorneys</h2>
+                <div class="lawyers-con">
+                    <div class="container-lawyer">
+                        <img src="img/linkedin-sales-navigator-pAtA8xe_iVM-unsplash.jpg">
+                        <p><a href="attorneys.html">Michael</a></p>
+                    </div>
+                    <div class="conatiner-lawyer">
+                        <img src="img/etty-fidele-VNYCIbZju0o-unsplash.jpg">
+                        <p><a href="attorneys.html">Bruce</a></p>
+                    </div>
+                    <div class="container-lawyer">
+                        <img src="img/rodrigo-dos-reis-QUTXypSFlQQ-unsplash.jpg">
+                        <p><a href="attorneys.html">Clark</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="values" id="values">
+        <h1>Values</h1>
+
+        <div class="Row">
+                <div class="containerInfo">
+                    <span class="fas fa-globe"></span>
+                    <h2>Service</h2>
+                    <p>
+                        Providing excellent service to our clients
+                        and each other.
+                    </p>
+                </div>
+                <div class="containerInfo">
+                    <span class="fas fa-balance-scale"></span>
+                    <h2>Honesty</h2>
+                    <p>
+                        Commitment to fairness, honor, and truth.
+                    </p>
+                </div>
+                <div class="containerInfo">
+                    <span class="far fa-handshake"></span>
+                    <h2>Ownership</h2>
+                    <p>
+                        Responsibility for profit and the success 
+                        of the firm.
+                    </p>
+                </div>
+                <div class="containerInfo">
+                    <span class="fas fa-award"></span>
+                    <h2>Excellence</h2>
+                    <p>Striving for the highest quality and 
+                        professionalism in everything we do.
+                    </p>
+                </div>
+        </div>
+        <!--Service, Excellence,
+        Integrity and Honesty, Ownership-->
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Munoz Law</h1>
+        <div class="containerContact">
+            <div class="contactInfo">
+                <p>PHONE</p>
+                <p>123 456 7890</p>
+                <p>FAX</p>
+                <p>123 456 7891</p>
+                <p>EMAIL</p>
+                <p>info@munozlaw.com</p>
+            </div>
+            <div class="addressInfo">
+                <p>ADDRESS<br><br></p>
+                <p>MUNOZ LAW FIRM</p>
+                <p>123 law street</p>
+                <p>Miami, FL</p>
+                <p>00000</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <img src="img/MunozLaw.png">
+    </footer>
+</body>
+</html>

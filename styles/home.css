@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+#homeBody {
+    font-size: 16px;
+    background-color: #365380;
+    color:black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+footer {
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: autoS;
+    border-top: 1px solid black;
+}
+footer img {
+    width: 8%;
+    margin-left: 46%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.6s;
+}
+.logo-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-con img{
+    width: 125px;
+    height: auto;
+    padding: 15px;
+}
+.words {
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+}
+.logo-con p {
+    font-size: 12px;
+    margin-top: 0px;
+}
+.logo-con h2 {
+    margin-bottom: 0px;
+}
+nav ul {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 5%;
+}
+nav ul li a {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul li:hover a {
+    color: rgb(243, 7, 7);
+}
+.icon {
+    color: black;
+    position: absolute;
+    right: 40px;
+    display: none;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+.icon:hover {
+    color: rgb(243, 7, 7);
+
+}
+
+/***************************************
+*              HOME PAGE               *
+****************************************/
+
+/* Main image and content */
+.main-image {
+    position: relative;
+    z-index: -1;
+}
+.main-image img{
+    width: 100%;
+    height: auto;
+}
+/* Services and law tabs*/
+.services {
+    box-shadow: -20px 0 20px black;
+    background-color: maroon;
+    margin-top: -20%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+    width: 100%;
+    height: auto;
+}
+.services h1 {
+    margin-top: 3%;
+    font-size: 2.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+}
+.services ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-top: 5%;
+}
+.services ul li {
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.services ul li:hover {
+    color: maroon;
+    background-color: #fff; 
+    text-shadow: none;
+    transition: background-color .5s;
+}
+.active {
+    background-color: #fff;
+    color: maroon;
+    text-shadow: none;
+}
+.hideService {
+    display: none;
+}
+.showService {
+    display: flex;
+}
+
+/* Info displayed under types of law */
+/* Anti-Dsicrimination Law */
+.disc {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #fff;
+}
+.disc-info {
+    width: 40%;
+    height: auto;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 5%;
+}
+.disc-info p {
+    padding-bottom: 10%;
+}
+.disc-info span {
+    margin-left: 15%;
+    padding: 10px;
+    background-color: black;
+    box-shadow: -2px -2px 6px black;
+    cursor: pointer;
+}
+.disc-lawyers {
+    align-items: center;
+    width: 100%;
+}
+.disc-lawyers h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 550;
+    border-bottom: 2px solid black;
+}
+
+/* Immigration Law*/
+.immig {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #fff;
+}
+.immig-info {
+    width: 40%;
+    height: auto;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 5%;
+}
+.immig-info p {
+    padding-bottom: 10%;
+}
+.immig-info span {
+    margin-left: 15%;
+    padding: 10px;
+    background-color: black;
+    box-shadow: -2px -2px 6px black;
+    cursor: pointer;
+}
+.immig-lawyers {
+    align-items: center;
+    width: 100%;
+}
+.immig-lawyers h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 550;
+    border-bottom: 2px solid black;
+}
+
+/* Criminal Law */
+.crim {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #fff;
+}
+.crim-info {
+    width: 40%;
+    height: auto;
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 5%;
+}
+.crim-info p {
+    padding-bottom: 10%;
+}
+.crim-info span {
+    margin-left: 15%;
+    padding: 10px;
+    background-color: black;
+    box-shadow: -2px -2px 6px black;
+    cursor: pointer;
+}
+.crim-lawyers {
+    align-items: center;
+    width: 100%;
+}
+.crim-lawyers h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 550;
+    border-bottom: 2px solid black;
+}
+
+/* Services Lawyers display */
+.lawyers-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 7%;
+}
+.lawyers-con img {
+    box-shadow: -2px -2px 6px black;
+    width: 150px;
+    height: 200px;
+}
+.lawyers-con p {
+    background-color: black;
+    color: #fff;
+    margin-top: 10%;
+    font-size: 1.3em;
+    padding: 7px;
+    text-align: center;
+    box-shadow: -2px -2px 6px black;
+    cursor: pointer;
+}
+.container-lawyer {
+    display: block;
+}
+
+/* Values */
+.values {
+    background-color: #365380;
+    padding: 4%;
+    height: auto;
+    box-shadow: inset 0 0 20px black;
+}
+.values h1 {
+    margin-top: 3%;
+    clear: both;
+    font-size: 2.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+}
+.values h2 {
+    font-size: 1.7em;
+    padding-bottom: 10%;
+}
+.values p {
+    font-size: 1.2em;
+}
+.Row {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+}
+.values span {
+    font-size: 4em;
+    margin-bottom: 10%;
+}
+.containerInfo {
+    width: 20%;
+    overflow: auto;
+    height: 100%;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    background-color: gray;
+    height: auto;
+    padding: 4%;
+}
+.contact h1 {
+    margin-top: 1%;
+    padding-bottom: 3%;
+    clear: both;
+    font-size: 2.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+}
+.containerContact {
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+}
+.contactInfo {
+    margin-right: 3%;
+    padding-right: 3%;
+}
+.contactInfo p {
+    padding-top: 5%;
+    font-size: 1.1em;
+}
+.addressInfo {
+    margin-left: 3%;
+    padding-left: 3%;
+}
+.addressInfo p {
+    font-size: 1.1em;
+    padding-top: 5%;
+}
+
+
+/***************************************
+*            SERVICE PAGE              *
+****************************************/
+.servicePage-container {
+    padding-top: 12%;
+    background-color: maroon;
+    width: 100%;
+    overflow: auto;
+    z-index: -1;
+}
+.servicePage-container h1 {
+    font-size: 2.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+    padding-bottom: 3%;
+}
+.services-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.service-explain {
+    margin-bottom: 2%;
+    width: 30%;
+    overflow: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.service-explain h3 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2%;
+}
+.service-explain p {
+    padding-top: 3%;
+    color: grey;
+    padding-bottom: 10%;
+}
+.service-explain h2 {
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+}
+.contactUs {
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: black;
+}
+
+/***************************************
+*           ATTORNYS PAGE              *
+****************************************/
+
+.attorneyPage-container {
+    background-color: gray;
+    width: 100%;
+    overflow: auto;
+    z-index: -1;
+    padding-top: 15%;
+}
+.attorneyPage-container h1 {
+    color: black;
+    text-shadow: 3px 3px 5px maroon;
+    font-size: 2.25em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.attorneys-container {
+    display: block;
+    width: 100%;
+}
+.attorney {
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    border-bottom: 1px solid black;
+}
+.attorney h2 {
+    font-size: 2em;
+}
+.attorney-pic {
+    width: 70%;
+    padding: 3%;
+}
+.attorney-pic img {
+    width: 100%;
+    box-shadow: -3px -3px 5px black;
+}
+.attorney-info {
+    color: black;
+    padding: 3%;
+}
+.attorney p {
+    border-top: 1px solid black;
+    margin-top: 3%;
+    padding-top: 2%;
+}
+.specs {
+    margin-top: 2%;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+}
+.specs h4 {
+    font-size: 1.25em;
+    color: black;
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+.specs ul {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+@media (max-width: 920px) {
+    .services h1, .values h1, .contact h1 {
+        font-size: 1.75em;
+    }
+    .services ul li {
+        font-size: 1.25em;
+    }
+    .values h2 {
+        font-size: 1.25em;
+    }
+    .values p {
+        font-size: 1em;
+    }
+    .values span {
+        font-size: 3em;
+    }
+    .servicePage-container h1 {
+        font-size: 2em;
+    }
+    .servicePage-container {
+        padding-top: 15%;
+    }
+    .attorney-pic {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    /* navbar edit */
+    nav {
+        background-color: #fff;
+    }
+    nav ul {
+        position: absolute;
+        top: 85px;
+        right: 0px;
+        margin-right: 0px;
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        background-color: #fff;
+        padding-bottom: 5px;
+    }
+    .icon {
+        display: block;
+    }
+    /* services edit */
+    .services h1 {
+        font-size: 1.5em;
+    }
+    .services h2 {
+        font-size: 1.25em;
+    }
+    .services p {
+        font-size: 0.8em;
+    }
+    .services span {
+        font-size: 0.8em;
+    }
+    .services ul li {
+        font-size: 1em;
+    }
+    .lawyers-con img {
+        width: 75px;
+        height: 100px;
+    }
+    .lawyers-con p {
+        font-size: 0.9em;
+    }
+    /* Values edit */
+    .values h1 {
+        font-size: 1.5em;
+    }
+    .values span {
+        font-size: 2.5em;
+    }
+    .values p {
+        font-size: 0.9em;
+    }
+
+    /* Service Page Edit */
+    .servicePage-container h1 {
+        margin-top: 5%;
+    }
+    .services-container {
+        display: block;
+        width: 100%;
+    }
+    .service-explain {
+        width: 100%;
+    }
+    .service-explain p, .service-explain h2 {
+        padding-bottom: 3%;
+    }
+
+    /* Attorneys page edit */
+    .attorney h2 {
+        font-size: 1.5em;
+    }
+    .specs h4 {
+        font-size: 1em;
+    }
+    .specs ul {
+        font-size: .8em;
+        width: 90%;
+        padding: 3%;
+    }
+}
+@media (max-width: 500px) {
+    nav {
+        background-color: #fff;
+        position: relative;
+    }
+    .words {
+        display: none;
+    }
+    .main-image {
+        display: none;
+    }
+    /* Services mobile edit */
+    .services {
+        margin-top: 0;
+        display: block;
+        box-shadow: none;
+        z-index: -1;
+    }
+    .services ul {
+        display: block;
+        text-align: center;
+    }
+    .services ul li {
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+    }
+    .lawyers-con, .services p, .services h2{
+        display: none;
+    }
+    .services span {
+        padding: 8%;
+        margin: 0;
+        margin-right: -150%;
+        display: inline;
+        box-shadow: none;
+    }
+    /* Values mobile edit */
+    .values {
+        display: block;
+        align-items: center;
+    }
+    .values h2 {
+        padding-bottom: 2%;
+        font-size: 1em;
+    }
+    .values p {
+        display: none;
+    }
+    .values span {
+        margin-bottom: 3%;
+    }
+    .Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .containerInfo {
+        text-align: center;
+    }
+    /* Services Page mobile edit */
+    .services-container {
+        display: block;
+        width: 100%;
+    }
+    .servicePage-container h1 {
+        padding-bottom: 10%;
+    }
+    .service-explain {
+        width: 100%;
+    }
+}
